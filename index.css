@@ -1,0 +1,79 @@
+body {
+    background-color: #1F2937;
+    color: white;
+}
+
+#title {
+    font-family: Karla;
+    font-size: 40px;
+}
+
+#title-focus {
+    color: #F59E0B;
+}
+
+#gen-pw-container {
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+}
+
+#pw-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.password {
+    padding: 5px 10px;
+    width: 300px;
+    height: 40px; 
+    background-color: #273549;
+    border-radius: 5px;
+    color: #F59E0B;
+    
+    overflow: hidden;
+    white-space: nowrap; /* Prevents wrapping */
+    text-overflow: ellipsis; /* Adds ... if text overflows */
+}
+
+.password:hover {
+    cursor: pointer;
+}
+
+.password:active {
+    background-color: white;
+}
+
+#password-length-slider {
+    width: 100%
+}
+
+#gen-btn {
+    margin-bottom: 30px;
+    background-color: #F59E0B;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+#gen-btn:hover {
+    cursor: pointer;
+}
+
+/* css for slider */
+#password-length-slider {
+  width: 100%;
+  height: 10px;
+  outline: none;
+}
+
+/* #password-length-slider::-webkit-slider-runnable-track {
+      background: #F59E0B;
+  
+}
+
+#password-length-slider::-moz-range-track {
+    background: #F59E0B;
+} */

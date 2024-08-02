@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="gen-pw-container">
+            <h1 id="title">Generate a <br><span id="title-focus">random password</span></h1>
+            <p id="message">Never use an insecure password again.</p>
+            
+            <button id="gen-btn" onclick="givePasswords()">Generate passwords</button>
+            
+            <div class="slider-container">
+                <label for="password-length-slider">Password Length: 
+                    <span id="length-value">15</span>
+                </label>
+                <input type="range" id="password-length-slider" min="8" max="32" value="12">
+            </div>
+            
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" id="include-uppercase" onclick="givePasswords()" checked>
+                    Uppercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="include-lowercase" onclick="givePasswords()" checked>
+                    Lowercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="include-numbers" onclick="givePasswords()" checked>
+                    Numbers
+                </label>
+                <label>
+                    <input type="checkbox" id="include-symbols" onclick="givePasswords()">
+                    Symbols
+                </label>
+            </div>
+            
+            <hr>
+            
+            <div id="pw-container">
+                <div class="password" id="password-one"></div>
+                <div class="password" id="password-two"></div>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
