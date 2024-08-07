@@ -1,26 +1,28 @@
 <html>
     <head>
+        <title>Password Generator</title>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- google font "Inter" -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="gen-pw-container">
-            <h1 id="title">Generate a <br><span id="title-focus">random password</span></h1>
-            <p id="message">Never use an insecure password again.</p>
-            
-            <button id="gen-btn" onclick="givePasswords()">Generate passwords</button>
-            
-            <div class="slider-container">
+        <main>
+            <div class="container">
+
+                <div class="gen-pw-header">
+                    <h1>Random Password Generator</h1>
+                    <button id="gen-btn" onclick="givePasswords()">Generate Passwords</button>
+                </div>
+
                 <label for="password-length-slider">Password Length: 
-                    <span id="length-value">15</span>
+                    <span id="length-value">42</span>
                 </label>
-                <input type="range" id="password-length-slider" min="8" max="32" value="12">
-            </div>
-            
-            <div class="checkbox-container">
+                <input type="range" id="password-length-slider" min="8" max="128" value="42">
+                             
                 <label>
                     <input type="checkbox" id="include-uppercase" onclick="givePasswords()" checked>
                     Uppercase Letters
@@ -34,19 +36,17 @@
                     Numbers
                 </label>
                 <label>
-                    <input type="checkbox" id="include-symbols" onclick="givePasswords()">
+                    <input type="checkbox" id="include-symbols" onclick="givePasswords()" checked>
                     Symbols
-                </label>
+                </label>    
+                
+                <div class="pw-container">
+                    <div class="password" id="password-one"></div>
+                    <div class="password" id="password-two"></div>
+                </div>
             </div>
-            
-            <hr>
-            
-            <div id="pw-container">
-                <div class="password" id="password-one"></div>
-                <div class="password" id="password-two"></div>
-            </div>
-        </div>
-        
+        </main>
         <script src="index.js"></script>
+
     </body>
 </html>

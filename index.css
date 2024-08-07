@@ -1,49 +1,49 @@
 body {
-    background-color: #1F2937;
+    background-color: rgb(17 16 16);
     color: white;
+    font-family: "Inter", sans-serif;
 }
 
-#title {
+h1 {
     font-family: Karla;
     font-size: 40px;
 }
 
 #title-focus {
     color: #F59E0B;
+
 }
 
-#gen-pw-container {
+.container {
     display: block;
-    width: 500px;
-    margin: 50px auto;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
-#pw-container {
+.pw-container {
     display: flex;
     gap: 10px;
     justify-content: space-between;
     margin-top: 40px;
+    width: 600px;
 }
 
 .password {
     padding: 5px 10px;
-    width: 300px;
-    height: 40px; 
-    background-color: #273549;
+    width: 275px;
+    background-color: white;
     border-radius: 5px;
-    color: #F59E0B;
+    color: black;
+    text-align: center;
     
-    overflow: hidden;
-    white-space: nowrap; /* Prevents wrapping */
-    text-overflow: ellipsis; /* Adds ... if text overflows */
+    word-wrap: break-word;
+    transition: 0.2s;
 }
 
 .password:hover {
     cursor: pointer;
-}
-
-.password:active {
-    background-color: white;
+    opacity: 90%;
 }
 
 #password-length-slider {
@@ -52,28 +52,27 @@ body {
 
 #gen-btn {
     margin-bottom: 30px;
-    background-color: #F59E0B;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 25px;
+    border: none;
     border-radius: 5px;
+    font-size: inherit;
 }
 
 #gen-btn:hover {
+    opacity: 90%;
     cursor: pointer;
 }
 
-/* css for slider */
 #password-length-slider {
-  width: 100%;
-  height: 10px;
-  outline: none;
+    padding: 4px;
 }
 
-/* #password-length-slider::-webkit-slider-runnable-track {
-      background: #F59E0B;
-  
+h1 {
+    margin-bottom: 10px;
 }
 
-#password-length-slider::-moz-range-track {
-    background: #F59E0B;
-} */
+.gen-pw-header {
+    margin-bottom: 50px;
+}
