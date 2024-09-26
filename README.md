@@ -10,4 +10,4 @@ A highly customizable password generator built with JavaScript, HTML, and CSS.
 
 ## 🚀 Live Demo
 
-[Experience the live demo here](https://friendly-medovik-4dc478.netlify.app/)
+https://tompwgen.netlify.app/
