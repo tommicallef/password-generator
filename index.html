@@ -13,37 +13,58 @@
         <main>
             <div class="container">
 
-                <div class="gen-pw-header">
-                    <h1>Random Password Generator</h1>
-                    <button id="gen-btn" onclick="givePasswords()">Generate Passwords</button>
+                <div id="gen-pw">
+
+                    <div id="gen-pw-header">
+                        <h1>Random Password Generator</h1>
+                        <button id="gen-btn" onclick="givePasswords()">Generate Passwords</button>
+                    </div>
+
+                    <div id="gen-pw-options">
+                        <label for="password-length-slider">Password Length: 
+                            <span id="length-value">42</span>
+                        </label>
+                        <input type="range" id="password-length-slider" min="8" max="128" value="42">
+                                    
+                        <label>
+                            <input type="checkbox" id="include-uppercase" onclick="givePasswords()" checked>
+                            Uppercase Letters
+                        </label>
+                        <label>
+                            <input type="checkbox" id="include-lowercase" onclick="givePasswords()" checked>
+                            Lowercase Letters
+                        </label>
+                        <label>
+                            <input type="checkbox" id="include-numbers" onclick="givePasswords()" checked>
+                            Numbers
+                        </label>
+                        <label>
+                            <input type="checkbox" id="include-symbols" onclick="givePasswords()" checked>
+                            Symbols
+                        </label>  
+                    </div>  
+                    
+                    <div class="pw-container">
+                        <div class="password" id="password-one"></div>
+                        <div class="password" id="password-two"></div>
+                    </div>
+
                 </div>
 
-                <label for="password-length-slider">Password Length: 
-                    <span id="length-value">42</span>
-                </label>
-                <input type="range" id="password-length-slider" min="8" max="128" value="42">
-                             
-                <label>
-                    <input type="checkbox" id="include-uppercase" onclick="givePasswords()" checked>
-                    Uppercase Letters
-                </label>
-                <label>
-                    <input type="checkbox" id="include-lowercase" onclick="givePasswords()" checked>
-                    Lowercase Letters
-                </label>
-                <label>
-                    <input type="checkbox" id="include-numbers" onclick="givePasswords()" checked>
-                    Numbers
-                </label>
-                <label>
-                    <input type="checkbox" id="include-symbols" onclick="givePasswords()" checked>
-                    Symbols
-                </label>    
-                
-                <div class="pw-container">
-                    <div class="password" id="password-one"></div>
-                    <div class="password" id="password-two"></div>
+                <div id="pw-guidelines">
+                    <h1 id="bestpractices-title">Guidelines</h1>
+                    <ul>
+                        <li>Make your password at least 12 characters long</li>
+                        <li>Mix uppercase letters, lowercase letters, numbers, and symbols</li>
+                        <li>Avoid using personal information like your name, birthday, or family members</li>
+                        <li>Don't use common words or phrases like "password123" or "letmein"</li>
+                        <li>Use a different password for each account</li>
+                        <li>Never share your passwords with anyone</li>
+                        <li>Don't store passwords in plain text on your computer or phone</li>
+                        <li>Consider using a password manager to safely store your passwords</li>
+                    </ul>
                 </div>
+
             </div>
         </main>
         <script src="index.js"></script>

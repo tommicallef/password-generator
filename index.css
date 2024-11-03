@@ -9,24 +9,22 @@ h1 {
     font-size: 40px;
 }
 
-#title-focus {
-    color: #F59E0B;
-
-}
-
 .container {
     display: block;
     width: 600px;
     margin: 0 auto;
-    margin-top: 150px;
 }
 
 .pw-container {
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     width: 600px;
+}
+
+#gen-pw-options {
+    margin-bottom: 30px;
 }
 
 .password {
@@ -73,6 +71,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-.gen-pw-header {
+#gen-pw-header {
     margin-bottom: 50px;
+}
+
+#bestpractices-title {
+    margin-top: 40px;
+}
+
+#gen-pw {
+    height: 400px;
+    margin-top: 150px;
+}
+
+#pw-guidelines {
+    margin-bottom: 150px;
 }
